@@ -30,8 +30,8 @@ jobs:
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
-          name: mywebapp
-          path: '${{ mywebapp/index.html }}
+          name: MyWebApp
+          path: '${{ github.workspace }}'
 
   deploy:
     runs-on: ubuntu-latest
